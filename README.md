@@ -11,5 +11,6 @@ Este site foi desenvolvido com o objetivo de utilizar ferramentas digitais para 
  Além disso, o sistema contará com dois quizzes interativos: um relacionado aos carismas, no qual o usuário poderá responder a perguntas para receber sugestões de comunidades com as quais possa se identificar; e outro voltado às vocações, com perguntas relacionadas aos diferentes caminhos vocacionais presentes na Igreja Católica. 
 
 Docente: Fabiano Amorim Vaz 
+
 Discentes: Maria Clara Leite Dantas e Myllena Sales Oliveira 
 
