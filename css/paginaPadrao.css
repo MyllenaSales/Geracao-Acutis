@@ -1,0 +1,55 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.layout h2 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.layoutImagem img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.layoutImagem p {
+    max-width: 400px; 
+    text-align: center;
+    margin: 1rem auto 0 auto;
+}
+
+.layoutConteudo p {
+    max-width: 60rem;
+    text-indent: 40px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.layoutConteudo a {
+    text-decoration: none;
+    color: white;
+}
+
+#diarioSandra {
+    text-align: center;
+    text-indent: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-style: italic;
+}

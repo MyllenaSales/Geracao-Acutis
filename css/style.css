@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: rgb(3, 18, 102);
+    animation-name: aparecer;
+    animation-duration: 200ms;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    min-height: 10vh;
+    width: 100%;
+    background-color: rgb(3, 18, 102);
+    color: white;
+}
+
+.title h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.title img {
+    width: 55px;
+    height: auto;
+}
+
+.navegacao {
+    display: flex;
+    gap: 20px;
+}
+
+.navegacao a {
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacao a:hover {
+    color: rgb(254, 255, 172);
+}
+
+/*fim*/
+
+main {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.027);
+}
+
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    width: 100%;
+    background-color: rgb(3, 18, 102);
+    color: white;
+    text-align: center;
+}
+
+.rodapeConteudo {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.rodapeConteudo p {
+    margin: 0;
+}
+
+
+/* Botão de voltar */
+.btn-voltar {
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 1.5px solid rgba(254, 255, 172, 0.5);
+    background: transparent;
+    color: rgb(254, 255, 172);
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btn-voltar:hover {
+    background: rgb(254, 255, 172);
+    color: rgb(3, 18, 102);
+
+}
+
+/*carrossel da home*/
+.containerCarrossel {
+    display: flex;
+    padding: 40px;
+}
+
+.carrosselWrapper {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background-color: rgb(3, 18, 102);
+}
+
+.carrosselTrack {
+    display: flex;
+    height: 100%;
+    transition: transform 0.8s ease;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 18, 102, 0.75);
+    z-index: 1;
+}
+
+.slideBg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    z-index: 0;
+}
+
+.slideConteudo {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+    gap: 50px;
+    opacity: 0;
+    transition: opacity 0.7s ease 0.3s;
+}
+
+.slide.ativo .slideConteudo {
+    opacity: 1;
+}
+
+.slideImagem {
+    flex-shrink: 0;
+    width: 320px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 2px 40% 2px 40%;
+    border: 3px solid rgba(254, 255, 172, 0.6);
+}
+
+.slideImagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideDivisor {
+    flex-shrink: 0;
+    width: 2px;
+    height: 200px;
+    background: linear-gradient(to bottom, transparent, rgba(254, 255, 172, 0.8), transparent);
+}
+
+.slideTexto {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 16px;
+}
+
+.slideNome {
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    color: rgb(254, 255, 172);
+}
+
+.slideFrase {
+    padding-left: 18px;
+    border-left: 3px solid rgba(254, 255, 172, 0.7);
+    font-style: italic;
+    font-size: clamp(1rem, 1.8vw, 1.35rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.slideSubtitulo {
+    font-size: 0.9em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(254, 255, 172, 0.6);
+}
+
+.carrosselBtn {
+    position: absolute;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    transform: translateY(-50%);
+    z-index: 10;
+    border: 1.5px solid rgba(254, 255, 172, 0.4);
+    border-radius: 50%;
+    background: rgba(254, 255, 172, 0.12);
+    color: rgb(254, 255, 172);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carrosselBtn:hover {
+    background: rgba(254, 255, 172, 0.25);
+}
+
+.carrosselBtn.prev {
+    left: 20px;
+}
+
+.carrosselBtn.next {
+    right: 20px;
+}
+
+.carrosselDots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(254, 255, 172, 0.35);
+    border: 1.5px solid rgba(254, 255, 172, 0.5);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.dot.ativo {
+    background: rgb(254, 255, 172);
+    transform: scale(1.4);
+}
+
+/* imagem do fundo da home*/
+.texto-santo {
+    max-width: 500px;
+}
+
+.texto-santo h1 {
+    font-size: 50px;
+}
+
+.texto-santo p {
+    font-size: 24px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    margin-top: 5vh;
+    width: 100%;
+}
+
+/*linha de separação geral*/
+.tagline {
+    margin: 1.5vh 0 4vh;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.linha,
+.linhaComMargem {
+    display: block;
+    width: 90%;
+    height: 1px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.linhaComMargem {
+    margin-bottom: 4vh;
+}
+
+/*fim*/
+
+/*modelo de paginas informativas*/
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70rem;
+    margin: 10vh auto;
+    padding: 5vh;
+    border-radius: 2vh;
+    background-color: rgb(3, 18, 102);
+    color: white;
+}
+
+.container h1 {
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(254, 255, 172);
+}

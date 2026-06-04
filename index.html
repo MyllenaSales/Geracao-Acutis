@@ -1,11 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geração Acutis</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/carrossel.css">
+  <link rel="stylesheet" href="/css/cards.css">
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+  <header class="cabecalho">
+    <div class="title">
+      <h2>Geração Acutis <img src="/img/icons/vaticanoFlag.png" alt="Bandeira do Vaticano"></h2>
+    </div>
+    <nav class="navegacao">
+      <a href="/index.html">Home</a>
+      <a href="/pages/sobreNos.html">Sobre o site</a>
+      <a href="/pages/formularios/cadastro.html">Perfil</a>
+    </nav>
+  </header>
+  <main>
+    <section class="carrosselWrapper">
+      <div class="carrosselTrack" id="track">
+
+        <div class="slide ativo">
+          <div class="slideBg" style="background-image: url('/img/santosImagem/carlo.webp');"></div>
+          <div class="slideConteudo">
+            <div class="slideImagem">
+              <img src="/img/santosImagem/carlo.webp" alt="Carlo Acutis">
+            </div>
+            <div class="slideDivisor"></div>
+            <div class="slideTexto">
+              <span class="slideSubtitulo">São</span>
+              <h2 class="slideNome">Carlo Acutis</h2>
+              <p class="slideFrase">"A Eucaristia é a minha auto-estrada para o Céu."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slideBg" style="background-image: url('/img/santosImagem/terezinha.jpg');"></div>
+          <div class="slideConteudo">
+            <div class="slideImagem">
+              <img src="/img/santosImagem/terezinha.jpg" alt="Santa Teresinha">
+            </div>
+            <div class="slideDivisor"></div>
+            <div class="slideTexto">
+              <span class="slideSubtitulo">Santa</span>
+              <h2 class="slideNome">Teresinha do Menino Jesus</h2>
+              <p class="slideFrase">"Minha vocação é o amor! No coração da Igreja, serei o amor."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slideBg" style="background-image: url('/img/santosImagem/joana.jpg');"></div>
+          <div class="slideConteudo">
+            <div class="slideImagem">
+              <img src="/img/santosImagem/joana.jpg" alt="Santa Joana d'Arc">
+            </div>
+            <div class="slideDivisor"></div>
+            <div class="slideTexto">
+              <span class="slideSubtitulo">Santa</span>
+              <h2 class="slideNome">Joana d'Arc</h2>
+              <p class="slideFrase">"Age, e Deus agirá. Combate, e Deus dará a vitória."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slideBg" style="background-image: url('/img/santosImagem/guidoSchaffer.jpeg');"></div>
+          <div class="slideConteudo">
+            <div class="slideImagem">
+              <img src="/img/santosImagem/guidoSchaffer.jpeg" alt="Beato Guido Schaffer">
+            </div>
+            <div class="slideDivisor"></div>
+            <div class="slideTexto">
+              <span class="slideSubtitulo">Beato</span>
+              <h2 class="slideNome">Guido Schaffer</h2>
+              <p class="slideFrase">"A santidade não consiste em fazer coisas extraordinárias, mas em fazer de maneira
+                extraordinária as coisas de todos os dias."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slideBg" style="background-image: url('/img/santosImagem/chiaraLuce.jpg');"></div>
+          <div class="slideConteudo">
+            <div class="slideImagem">
+              <img src="/img/santosImagem/chiaraLuce.jpg" alt="Beata Chiara Luce">
+            </div>
+            <div class="slideDivisor"></div>
+            <div class="slideTexto">
+              <span class="slideSubtitulo">Beata</span>
+              <h2 class="slideNome">Chiara Luce</h2>
+              <p class="slideFrase">"Neste momento, não me resta mais nada. Mas ainda tenho meu coração e, com ele,
+                sempre poderei amar."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slideBg" style="background-image: url('/img/santosImagem/chiara_violino.jpg');"></div>
+          <div class="slideConteudo">
+            <div class="slideImagem">
+              <img src="/img/santosImagem/chiara_violino.jpg" alt="Beata Chiara Corbella">
+            </div>
+            <div class="slideDivisor"></div>
+            <div class="slideTexto">
+              <span class="slideSubtitulo">Beata</span>
+              <h2 class="slideNome">Chiara Corbella</h2>
+              <p class="slideFrase">"Aquilo que Deus quer para nós é muito mais belo do que tudo que poderíamos pedir
+                com a nossa imaginação."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slideBg" style="background-image: url('/img/santosImagem/pierGiorgio.jpg');"></div>
+          <div class="slideConteudo">
+            <div class="slideImagem">
+              <img src="/img/santosImagem/pierGiorgio.jpg" alt="Beato Pier Giorgio Frassati">
+            </div>
+            <div class="slideDivisor"></div>
+            <div class="slideTexto">
+              <span class="slideSubtitulo">Beato</span>
+              <h2 class="slideNome">Pier Giorgio Frassati</h2>
+              <p class="slideFrase">"Viver sem uma Fé, sem um patrimônio para defender, sem sustentar a Verdade numa
+                luta contínua, não é viver, mas fingir que se vive."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slideBg" style="background-image: url('/img/santosImagem/sandra.jpg');"></div>
+          <div class="slideConteudo">
+            <div class="slideImagem">
+              <img src="/img/santosImagem/sandra.jpg" alt="Beata Sandra Sabattini">
+            </div>
+            <div class="slideDivisor"></div>
+            <div class="slideTexto">
+              <span class="slideSubtitulo">Beata</span>
+              <h2 class="slideNome">Sandra Sabattini</h2>
+              <p class="slideFrase">"Quero Te amar nas situações mais absurdas."</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carrosselBtn prev" id="prev">&#8592;</button>
+      <button class="carrosselBtn next" id="next">&#8594;</button>
+
+      <div class="carrosselDots" id="dots">
+        <span class="dot ativo" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+        <span class="dot" data-index="5"></span>
+        <span class="dot" data-index="6"></span>
+        <span class="dot" data-index="7"></span>
+      </div>
+    </section>
+
+    <section class="painel">
+      <div class="cardHome" id="missa">
+        <h1>A SANTA MISSA</h1>
+        <p>O mistério da Santa Missa.</p>
+        <a href="/pages/sections/santaMissa.html">Saiba mais</a>
+      </div>
+      <div class="cardHome" id="guadalupe">
+        <h1>AS APARIÇÕES DE MARIA</h1>
+        <p>Conheça a história das principais aparições de Maria, mãe de Nosso Senhor Jesus Cristo.</p>
+        <a href="/pages/sections/aparicoes.html">Saiba mais</a>
+      </div>
+      <div class="cardHome" id="terco">
+        <h1>O SANTO ROSÁRIO</h1>
+        <p>Aprenda a importância do Santo Rosário e como rezá-lo.</p>
+        <a href="/pages/santoTerco.html">Saiba mais</a>
+      </div>
+      <div class="cardHome" id="santidade">
+        <h1>OS JOVENS E A SANTIDADE</h1>
+        <p>Conheça a história de jovens que nunca desistiram de buscar a santidade.</p>
+        <a href="/pages/sections/santidade.html">Saiba mais</a>
+      </div>
+    </section>
+    <div class="banner">
+      <img src="/img/wallpaper/final.png" alt="">
+    </div>
+  </main>
+  <footer class="rodape">
+    <div class="rodapeConteudo">
+      <p>Site desenvolvido na disciplina de Tecnologias Web</p>
+      <p>&copy; Curso de Ciência da Computação</p>
+    </div>
+  </footer>
+  <script src="/js/script.js"></script>
 </body>
+
 </html>

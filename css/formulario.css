@@ -1,0 +1,76 @@
+.formularioContainer {
+    width: 100%;
+    max-width: 450px;
+    margin: 10vh auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formBloco h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.formBloco h4 {
+    margin: 20px 0 12px;
+    color: #333;
+}
+
+.grupoCampo {
+    margin-bottom: 18px;
+}
+
+.grupoCampo label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+.grupoCampo input,
+.grupoCampo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.grupoCampo input:focus,
+.grupoCampo textarea:focus {
+    outline: none;
+    border-color: #4A90E2;
+}
+
+.grupoCampo textarea {
+    resize: vertical;
+}
+
+.grupoCampo input[type="date"] {
+    cursor: pointer;
+}
+
+.grupoCampo input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.btnEnviar {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4A90E2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnEnviar:hover {
+    background-color: #357ABD;
+}

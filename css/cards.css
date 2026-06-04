@@ -1,0 +1,168 @@
+.card,
+.cardHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5vh;
+
+    background: center / cover no-repeat;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: rgb(254, 255, 172);
+}
+
+.card::before,
+.cardHome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.card h1,
+.cardHome h1,
+.cardHome p,
+.cardHome a {
+    position: relative;
+    z-index: 2;
+}
+
+
+.painel {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    height: auto;
+    gap: 5vh;
+    padding: 5vh;
+}
+
+@media (max-width: 1200px) {
+    .banner img{
+        display: none;
+    }
+    .painel {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.card h1,
+.cardHome h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    margin: 2vh;
+}
+
+.cardHome h1 {
+    max-width: 100vh;
+    margin: 5vh 5vh 0;
+}
+
+.cardHome p {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 4vh;
+    color: white;
+    font-size: 1rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.cardHome a {
+    margin-bottom: 5vh;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+@media (min-width: 1201px) {
+    .card::before {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .card h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        backdrop-filter: blur(0px);
+        transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+    }
+
+    .card:hover h1 {
+        opacity: 1;
+        backdrop-filter: blur(2px);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Cards da Página de Santos */
+#joanaDarc {
+    background-image: url(/img/santosImagem/joanaDarc.jpg);
+}
+
+#guido {
+    background-image: url(/img/santosImagem/guidoSchaffer.jpeg);
+}
+
+#chiaraCorbella {
+    background-image: url(/img/santosImagem/chiara_violino.jpg);
+}
+
+#carloAcutis {
+    background-image: url(/img/santosImagem/carlo/carloInComputer.jpg);
+}
+
+#terezinha {
+    background-image: url(/img/santosImagem/santaTerezinha.jpg);
+}
+
+#chiaraLuce {
+    background-image: url(/img/santosImagem/chiaraLuce.jpg);
+}
+
+#pierGiorgio {
+    background-image: url(/img/santosImagem/pierGiorgio.jpg);
+}
+
+#sandraSabattini {
+    background-image: url(/img/santosImagem/sandraSabattini.jpg);
+}
+
+/* Cards da Home */
+#missa {
+    background-image: url(/img/wallpaper/missa.png);
+}
+
+#terco {
+    background-image: url(/img/wallpaper/santoTerço.avif);
+}
+
+#guadalupe {
+    background-image: url(/img/wallpaper/guadalupe.png);
+}
+
+#santidade {
+    background-image: url(/img/santosImagem/sandra.jpg);
+}

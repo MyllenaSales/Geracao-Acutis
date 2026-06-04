@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/paginaPadrao.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="title">
+            <h2>Geração Acutis <img src="/img/icons/vaticanoFlag.png" alt=""></h2>
+        </div>
+        <nav class="navegacao">
+            <a href="/index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <div class="formularioContainer">
+            <form id="formLogin" class="formBloco">
+                <h3>Login</h3>
+                <div class="grupoCampo">
+                    <label for="loginEmail">E-mail</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="grupoCampo">
+                    <label for="loginSenha">Senha</label>
+                    <input type="password" id="loginSenha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <div class="grupoCampo">
+                    <label>Não possui conta? <a href="/pages/formularios/cadastro.html">Cadastre-se aqui</a></label>
+                </div>
+                <button type="submit" class="btnEnviar">Entrar</button>
+            </form>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="rodapeConteudo">
+            <p>Site desenvolvido na disciplina de Tecnologias Web</p>
+            <p>&copy; Curso de Ciência da Computação</p>
+        </div>
+    </footer>
+</body>
+</html>

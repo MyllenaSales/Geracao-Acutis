@@ -1,0 +1,39 @@
+.sobreNosConteudo p {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-indent: 40px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.mosaico {
+    display: flex;
+    justify-content: center;
+    max-width: 60rem;
+    margin: 5vh auto;
+    overflow: hidden;
+    border-radius: 2vh;
+    gap: 0;
+}
+
+.mosaico img {
+    flex: 1 1 auto;
+    width: auto;
+    height: 12rem;
+    object-fit: contain;
+}
+
+@media (max-width: 1080px) {
+
+    .mosaico {
+        display: grid;
+        justify-items: center;
+    }
+
+    .mosaico img {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        display: block;
+    }
+}

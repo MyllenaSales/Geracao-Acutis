@@ -1,0 +1,185 @@
+.estruturaReza {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.rezaItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 3px solid rgba(254, 255, 172, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.rezaItem.rezaDestaque {
+    border-left-color: rgb(254, 255, 172);
+    background: rgba(254, 255, 172, 0.08);
+}
+
+.rezaNumero {
+    min-width: 36px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(254, 255, 172);
+}
+
+.rezaNome {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.misteriosAbas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 10px;
+}
+
+.aba {
+    padding: 8px 22px;
+    border: 1.5px solid rgba(254, 255, 172, 0.4);
+    border-radius: 50px;
+    background: transparent;
+    color: rgba(254, 255, 172, 0.7);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.aba.ativa {
+    border-color: rgb(254, 255, 172);
+    background: rgb(254, 255, 172);
+    color: rgb(3, 18, 102);
+    font-weight: bold;
+}
+
+.diaSemana {
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: rgba(254, 255, 172, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.misterioGrupo {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.misterioGrupo.ativo {
+    display: flex;
+}
+
+.misterioSlide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.misterioSlide.ativo {
+    display: flex;
+}
+
+.misterioInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.misterioNumero {
+    font-size: 0.85rem;
+    color: rgba(254, 255, 172, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.misterioInfo h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: rgb(254, 255, 172);
+}
+
+.misterioInfo p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.rezaContagem {
+    margin-top: 4px;
+    font-size: 0.82rem;
+    color: rgba(254, 255, 172, 0.5);
+}
+
+.misterioNav {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.misterioBtn {
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid rgba(254, 255, 172, 0.4);
+    border-radius: 50%;
+    background: transparent;
+    color: rgb(254, 255, 172);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.misterioBtn:hover {
+    background: rgba(254, 255, 172, 0.15);
+}
+
+#btnRezar {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 14px 36px;
+    border: 1.5px solid rgba(254, 255, 172, 0.5);
+    border-radius: 50px;
+    background: transparent;
+    color: rgb(254, 255, 172);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#btnRezar:hover {
+    background: rgb(254, 255, 172);
+    color: rgb(3, 18, 102);
+}
+
+@media (max-width: 768px) {
+    .misteriosAbas {
+        justify-content: center;
+    }
+
+    .aba {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .misterioInfo h3 {
+        font-size: 1.1rem;
+    }
+
+    .rezaItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}
