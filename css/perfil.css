@@ -1,0 +1,142 @@
+.perfilBanner {
+    height: 250px;
+    background: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(/img/wallpaper/jerusalem.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.perfilConteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -80px;
+    padding: 0 1rem 2rem;
+}
+
+.fotoPerfil img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #101728;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .4);
+}
+
+.infoPerfil {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.infoPerfil h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: .3rem;
+}
+
+.cargoPerfil {
+    display: block;
+    color: #c9c9c9;
+    font-size: .95rem;
+    margin-bottom: 1rem;
+}
+
+.frasePerfil {
+    max-width: 600px;
+    color: #c5c5c5;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.estatisticasPerfil {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.estatisticasPerfil div {
+    text-align: center;
+}
+
+.estatisticasPerfil strong {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.estatisticasPerfil span {
+    color: #bdbdbd;
+    font-size: .9rem;
+}
+
+.atalhosPerfil {
+    width: min(900px, 95%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cardAtalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #16247e;
+    border: 1px solid rgba(255, 230, 140, .15);
+    padding: 1.25rem 1.5rem;
+    border-radius: 20px;
+    transition: .25s ease;
+}
+
+.cardAtalho:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+}
+
+.cardInfo h3 {
+    color: white;
+    margin-bottom: .4rem;
+}
+
+.cardInfo p {
+    color: #c5c5c5;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.btnAcessar {
+    background-color: #0B4EA2;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: .7rem 1.2rem;
+    border-radius: 10px;
+    transition: .25s;
+    white-space: nowrap;
+}
+
+.btnAcessar:hover {
+    background-color: #357ABD;
+}
+
+@media (max-width: 768px) {
+
+    .cardAtalho {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .btnAcessar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .estatisticasPerfil {
+        gap: 1.5rem;
+    }
+
+    .infoPerfil h2 {
+        font-size: 1.7rem;
+    }
+}

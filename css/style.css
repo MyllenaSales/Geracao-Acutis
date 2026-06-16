@@ -93,6 +93,26 @@ main {
     margin: 0;
 }
 
+/*botao geral*/
+.btnEnviar {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0B4EA2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btnEnviar:hover {
+    background-color: #357ABD;
+}
 
 /* Botão de voltar */
 .btn-voltar {

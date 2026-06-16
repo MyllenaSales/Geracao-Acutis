@@ -1,0 +1,41 @@
+.bannerComunidades {
+    height: 100vh;
+    background-image: url("/img/wallpaper/yourName.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.bannerComunidades::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.bannerComunidadesConteudo {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.bannerComunidadesConteudo h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.btnEnviar{
+    width: 30vh;
+}
