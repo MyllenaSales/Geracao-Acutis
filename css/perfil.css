@@ -1,6 +1,6 @@
 .perfilBanner {
     height: 250px;
-    background: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(/img/wallpaper/jerusalem.jpg);
+    background: linear-gradient(to left, #1e3a8a, #1a347c, #162e6e, #122860, #0e2252, #0a1c44, #061636, #031028, #000000);
     background-size: cover;
     background-position: center;
 }
