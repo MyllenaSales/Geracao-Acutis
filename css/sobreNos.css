@@ -24,6 +24,11 @@
     object-fit: contain;
 }
 
+.container {
+    margin: 10vh auto;
+    border-radius: 2vh;
+}
+
 @media (max-width: 1080px) {
 
     .mosaico {
