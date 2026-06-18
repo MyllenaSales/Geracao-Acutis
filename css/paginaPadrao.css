@@ -4,11 +4,9 @@
     align-items: center;
     text-align: center;
     gap: 2rem;
-    padding: 3rem 0;
 }
 
 .layout h2 {
-    margin: 0;
     font-size: 2rem;
     text-align: center;
 }
@@ -21,7 +19,7 @@
 }
 
 .layoutImagem p {
-    max-width: 400px; 
+    max-width: 400px;
     text-align: center;
     margin: 1rem auto 0 auto;
 }
@@ -31,6 +29,10 @@
     text-indent: 40px;
     text-align: justify;
     line-height: 1.7;
+}
+
+.layout i {
+    color: rgb(254, 255, 172);
 }
 
 .layoutConteudo a {

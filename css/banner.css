@@ -1,0 +1,65 @@
+.banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+}
+
+#bannerMissa {
+    background-image: url("/img/wallpaper/bannerMissa.png");
+}
+
+#banneAparicoes {
+    background-image: url("/img/wallpaper/guadalupeBanner.jpg");
+}
+#bannerTerco{
+    background-image: url("/img/wallpaper/rosario.jpg");
+}
+#bannerJmj{
+    background-image: url(/img/wallpaper/jmj.jpg);
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(3, 18, 102, 0.75);
+}
+
+.bannerConteudo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    margin: 0 50px;
+}
+
+.bannerTitulo {
+    font-size: 4rem;
+    letter-spacing: .08em;
+    color: rgb(254, 255, 172);
+}
+
+.bannerLinha {
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgb(254, 255, 172), transparent);
+}
+
+.bannerFrase {
+    max-width: 650px;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, .9);
+}
+
+.bannerAutor {
+    font-size: .85rem;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: rgb(254, 255, 172);
+}

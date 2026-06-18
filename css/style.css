@@ -345,7 +345,6 @@ a {
     height: 1px;
     background-color: rgba(254, 255, 172, .3);
 }
-
 .separador span {
     color: rgb(254, 255, 172);
 }
@@ -358,10 +357,12 @@ a {
     flex-direction: column;
     max-width: 70rem;
     margin: 10vh auto;
+    margin-top: 0px;
     padding: 5vh;
-    border-radius: 2vh;
     background-color: rgb(3, 18, 102);
     color: white;
+    border-radius: 0 0 2vh 2vh;
+    gap: 20px;
 }
 
 .container h1 {
