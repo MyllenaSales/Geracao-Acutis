@@ -319,29 +319,35 @@ a {
 }
 
 .banner img {
-    margin-top: 5vh;
+    margin-top: 10vh;
     width: 100%;
 }
 
-/*linha de separação geral*/
 .tagline {
-    margin: 1.5vh 0 4vh;
+    margin: 0 0 2vh 0;
     text-align: center;
     font-style: italic;
     opacity: 0.9;
 }
 
-.linha,
-.linhaComMargem {
-    display: block;
-    width: 90%;
-    height: 1px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.15);
+/*linha de separação geral*/
+.separador {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: .7;
 }
 
-.linhaComMargem {
-    margin-bottom: 4vh;
+.separador::before,
+.separador::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: rgba(254, 255, 172, .3);
+}
+
+.separador span {
+    color: rgb(254, 255, 172);
 }
 
 /*fim*/

@@ -10,7 +10,8 @@
     display: flex;
     justify-content: center;
     max-width: 60rem;
-    margin: 5vh auto;
+    margin: 2vh auto;
+    margin-bottom: 0;
     overflow: hidden;
     border-radius: 2vh;
     gap: 0;

@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 diaSemanaTexto.textContent = diasPorGrupo[grupoAlvo];
             }
             if (btnRezar) {
-                btnRezar.setAttribute("href", `/pages/rezar.html?misterio=${grupoAlvo}`);
+                btnRezar.setAttribute("href", `/pages/sections/rezar.html?misterio=${grupoAlvo}`);
             }
         });
     });
