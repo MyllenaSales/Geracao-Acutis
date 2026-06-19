@@ -345,6 +345,7 @@ a {
     height: 1px;
     background-color: rgba(254, 255, 172, .3);
 }
+
 .separador span {
     color: rgb(254, 255, 172);
 }
@@ -352,25 +353,32 @@ a {
 /*fim*/
 
 /*modelo de paginas informativas*/
-.container {
+.container, .containerBanner{
     display: flex;
     flex-direction: column;
     max-width: 70rem;
     margin: 10vh auto;
-    margin-top: 0px;
     padding: 5vh;
     background-color: rgb(3, 18, 102);
     color: white;
-    border-radius: 0 0 2vh 2vh;
     gap: 20px;
 }
 
-.container h1 {
+.container h1, .containerBanner h1 {
     text-align: center;
     font-size: 2.5rem;
     color: rgb(254, 255, 172);
 }
 
-.container span{
+.container span, .containerBanner span{
     margin: 0;
+}
+
+.container {
+    border-radius: 2vh;
+}
+
+.containerBanner {
+    margin-top: 0px;
+    border-radius: 0 0 2vh 2vh;
 }
