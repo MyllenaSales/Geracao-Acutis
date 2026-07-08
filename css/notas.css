@@ -1,0 +1,138 @@
+:root {
+    --primary: #0B4EA2;
+    --primaryHover: #357ABD;
+    --deleteHover: rgb(109, 0, 0);
+    --white: #FFFFFF;
+    --shadow: 0 8px 20px rgba(0, 0, 0, .15);
+    --radius: 15px;
+    --transition: .3s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notesSection {
+    width: 100%;
+}
+
+.newNoteContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.newNote,
+.note {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.newNote {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note {
+    width: 280px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newNote:hover,
+.note:hover {
+    transform: translateY(-4px);
+}
+
+.noteTitle,
+.noteText {
+    border: none;
+    outline: none;
+}
+
+.noteTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primaryHover);
+    background: transparent;
+}
+
+.noteText {
+    resize: none;
+    min-height: 120px;
+    font-size: 15px;
+}
+
+.addButton,
+.noteButtons button {
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.addButton {
+    align-self: center;
+    width: 130px;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--primary);
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.addButton:hover {
+    background: var(--primaryHover);
+}
+
+.notesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.note h3 {
+    color: var(--primaryHover);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.note p {
+    flex: 1;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.noteButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.noteButtons button {
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.editButton,
+.deleteButton {
+    background: var(--primary);
+}
+
+.editButton:hover {
+    background: var(--primaryHover);
+}
+
+.deleteButton:hover {
+    background: var(--deleteHover);
+}
