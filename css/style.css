@@ -26,6 +26,7 @@ body {
 }
 
 .cabecalho {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,6 +64,77 @@ body {
 
 .navegacao a:hover {
     color: rgb(254, 255, 172);
+}
+
+.menuToggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.menuToggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menuToggle.aberto span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+
+.menuToggle.aberto span:nth-child(2) {
+    opacity: 0;
+}
+
+.menuToggle.aberto span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 0 20px;
+        min-height: 9vh;
+    }
+
+    .menuToggle {
+        display: flex;
+    }
+
+    .navegacao {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color: rgb(3, 18, 102);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        transition: max-height 0.35s ease;
+    }
+
+    .navegacao.aberta {
+        max-height: 60vh;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .navegacao a {
+        width: 100%;
+        padding: 18px 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
 }
 
 /*fim*/
@@ -299,6 +371,90 @@ a {
     transform: scale(1.4);
 }
 
+@media (max-width: 900px) {
+    .carrosselWrapper {
+        height: 85vh;
+    }
+
+    .slideConteudo {
+        flex-direction: column;
+        justify-content: center;
+        padding: 90px 24px 60px;
+        gap: 18px;
+        text-align: center;
+    }
+
+    .slideImagem {
+        width: 200px;
+        height: 240px;
+    }
+
+    .slideDivisor {
+        width: 120px;
+        height: 2px;
+        background: linear-gradient(to right, transparent, rgba(254, 255, 172, 0.8), transparent);
+    }
+
+    .slideTexto {
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .slideFrase {
+        border-left: none;
+        border-top: 3px solid rgba(254, 255, 172, 0.7);
+        padding-left: 0;
+        padding-top: 14px;
+        font-size: 1rem;
+    }
+
+    .slideNome {
+        font-size: 1.5rem;
+    }
+
+    .carrosselBtn {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
+
+    .carrosselBtn.prev {
+        left: 10px;
+    }
+
+    .carrosselBtn.next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrosselWrapper {
+        height: 80vh;
+    }
+
+    .slideConteudo {
+        padding: 80px 16px 50px;
+    }
+
+    .slideImagem {
+        width: 150px;
+        height: 180px;
+    }
+
+    .slideNome {
+        font-size: 1.2rem;
+    }
+
+    .slideFrase {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .slideSubtitulo {
+        font-size: 0.75em;
+    }
+}
+
 /* imagem do fundo da home*/
 .texto-santo {
     max-width: 500px;
@@ -381,4 +537,59 @@ a {
 .containerBanner {
     margin-top: 0px;
     border-radius: 0 0 2vh 2vh;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 9vh;
+    }
+
+    .cabecalho {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 9vh;
+        padding: 0 20px;
+        z-index: 100000; 
+        background-color: rgb(3, 18, 102);
+    }
+
+    .menuToggle {
+        display: flex;
+    }
+
+    .navegacao {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color: rgb(3, 18, 102);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        transition: max-height 0.35s ease, opacity 0.3s ease;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 99999 !important; 
+    }
+
+    .navegacao.aberta {
+        max-height: 60vh;
+        opacity: 1;
+        pointer-events: auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .navegacao a {
+        display: block;
+        width: 100%;
+        padding: 18px 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
 }

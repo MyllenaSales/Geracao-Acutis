@@ -16,4 +16,14 @@ document.querySelector('#prev').addEventListener('click', () => irPara(atual - 1
 dots.map(dot => {
     dot.addEventListener('click', () => irPara(Number(dot.dataset.index)));
 });
-setInterval(() => irPara(atual + 1), 6000);
+setInterval(() => irPara(atual + 1), 9000);
+
+document.querySelectorAll('.cardHome').forEach(card => {
+    const link = card.querySelector('a');
+    if (!link) return;
+    card.addEventListener('click', event => {
+        if (window.innerWidth > 768) return;
+        if (event.target.closest('a')) return;
+        window.location.href = link.getAttribute('href');
+    });
+});

@@ -61,6 +61,29 @@
     }
 }
 
+@media (max-width: 768px) {
+    .painel {
+        grid-template-columns: 1fr;
+        gap: 3vh;
+        padding: 4vh 5vw;
+    }
+
+    .cardHome {
+        aspect-ratio: auto;
+        min-height: 260px;
+        cursor: pointer;
+    }
+
+    .cardHome h1 {
+        margin: 4vh 4vh 0;
+    }
+
+    .cardHome a {
+        padding: 10px 24px;
+        font-weight: bold;
+    }
+}
+
 .card h1,
 .cardHome h1 {
     font-size: 1.5rem;

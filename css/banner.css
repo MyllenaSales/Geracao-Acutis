@@ -63,3 +63,24 @@
     text-transform: uppercase;
     color: rgb(254, 255, 172);
 }
+
+@media (max-width: 768px) {
+    .bannerConteudo {
+        margin: 0 24px;
+        gap: 1.2rem;
+    }
+
+    .bannerTitulo {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .bannerLinha {
+        width: 120px;
+    }
+
+    .bannerFrase {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
