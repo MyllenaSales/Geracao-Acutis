@@ -4,125 +4,125 @@
         "nome": "Franciscano",
         "descricao": "Seguir a Cristo por meio da simplicidade, humildade, fraternidade, amor aos pobres e cuidado com toda a criação.",
         "imagem": "../img/comunidades/franciscanos.jpg",
-        "link": "#"
+        "link": "https://franciscanos.org.br"
     },
     {
         "tipo": "Carisma",
         "nome": "Agostiniano",
         "descricao": "Buscar a Deus na vida comunitária, na amizade, na interioridade e no amor à verdade, inspirados por Santo Agostinho.",
         "imagem": "../img/comunidades/agostinianos.jpg",
-        "link": "#"
+        "link": "https://agostinianos.org.br/carisma-espiritualidade-novo/"
     },
     {
         "tipo": "Carisma",
         "nome": "Beneditino",
         "descricao": "Vida de oração, trabalho e equilíbrio segundo a Regra de São Bento, resumida no lema 'Ora et Labora' (Rezar e trabalha).",
         "imagem": "../img/comunidades/beneditinos.jpeg",
-        "link": "#"
+        "link": "https://www.diocesedesantoangelo.org/monges-beneditinos"
     },
     {
         "tipo": "Carisma",
         "nome": "Salesiano",
         "descricao": "Educar e evangelizar crianças e jovens com alegria, razão, religião e amor, seguindo o Sistema Preventivo de São João Bosco.",
         "imagem": "../img/comunidades/selesianos.jpg",
-        "link": "#"
+        "link": "https://www.salesianos.br/institucional/carisma-salesiano"
     },
     {
         "tipo": "Carisma",
         "nome": "Jesuíta",
         "descricao": "Encontrar Deus em todas as coisas por meio do discernimento, da excelência intelectual, dos Exercícios Espirituais e da missão evangelizadora.",
         "imagem": "../img/comunidades/jesuitas.png",
-        "link": "#"
+        "link": "https://jesuitasbrasil.org.br/seja-um-jesuita/"
     },
     {
         "tipo": "Carisma",
         "nome": "Dominicano",
         "descricao": "Anunciar a Verdade por meio da pregação, do estudo, da contemplação e da defesa da fé, seguindo São Domingos.",
         "imagem": "../img/comunidades/dominicanos.jpg",
-        "link": "#"
+        "link": "https://www.dominicanos.org.br/espiritualidade-dominicana"
     },
     {
         "tipo": "Carisma",
         "nome": "Carmelita",
         "descricao": "Viver a intimidade com Deus através da oração silenciosa, da contemplação e da confiança filial, inspirados por Nossa Senhora do Carmo.",
         "imagem": "../img/comunidades/carmelitas.jpeg",
-        "link": "#"
+        "link": "https://carmelitas.org.br/carisma-carmelitano/"
     },
     {
         "tipo": "Carisma",
         "nome": "Ursulino",
         "descricao": "Educação cristã, formação integral e promoção da dignidade da mulher e da juventude, segundo Santa Ângela Merici.",
         "imagem": "../img/comunidades/ursulinas.jpg",
-        "link": "#"
+        "link": "https://www.colegiosantaursula.com.br/evento/live-sobre-carisma-ursulino-reune-escolas-de-todo-brasil"
     },
     {
         "tipo": "Movimento",
         "nome": "Vicentinos",
         "descricao": "Servir Cristo nos pobres por meio da caridade concreta, visitas às famílias necessitadas e promoção da dignidade humana.",
         "imagem": "../img/comunidades/vicentinos.jpg",
-        "link": "#"
+        "link": "https://www.ssvpbrasil.org.br/quem-somos"
     },
     {
         "tipo": "Movimento",
         "nome": "Renovação Carismática",
         "descricao": "Promover uma profunda experiência do Espírito Santo através da oração, dos carismas, da evangelização e da vida sacramental.",
         "imagem": "../img/comunidades/renovacaoCarismatica.jpg",
-        "link": "#"
+        "link": "https://rccbrasil.org.br/nossa-historia/"
     },
     {
         "tipo": "Movimento",
         "nome": "Focolares",
         "descricao": "Construir a unidade entre as pessoas e os povos, vivendo o amor recíproco e a espiritualidade da comunhão.",
         "imagem": "../img/comunidades/focolares.webp",
-        "link": "#"
+        "link": "https://focolares.org.br/espiritualidade-da-unidade/"
     },
     {
         "tipo": "Movimento",
         "nome": "Apostolado da Oração",
         "descricao": "Oferecer diariamente a própria vida ao Sagrado Coração de Jesus por meio da oração, da Eucaristia e das intenções do Papa.",
         "imagem": "../img/comunidades/apostoladoDaOracao.jpg",
-        "link": "#"
+        "link": "https://aomej.org.br/sagrado-coracao-de-jesus"
     },
     {
         "tipo": "Espiritualidade",
         "nome": "Consagração Mariana",
         "descricao": "Entregar-se inteiramente a Jesus pelas mãos de Maria, vivendo como seu filho e imitando suas virtudes no caminho da santidade.",
         "imagem": "../img/comunidades/consagracaoMariana.jpeg",
-        "link": "#"
+        "link": "https://bibliotecacatolica.com.br/blog/formacao/a-consagracao-a-nossa-senhora/?srsltid=AfmBOoovoXODs_uc2gBnIViiwb-3rxZrgnzjkxekc2bFf1QW7KCWfLYw"
     },
     {
         "tipo": "Devoção",
         "nome": "Divina Misericórdia",
         "descricao": "Confiar infinitamente na misericórdia de Jesus e praticar obras de misericórdia, conforme as revelações a Santa Faustina.",
         "imagem": "../img/comunidades/divinaMisericordia.jpg",
-        "link": "#"
+        "link": "https://bibliotecacatolica.com.br/blog/formacao/divina-misericordia/?srsltid=AfmBOopWCvoFugRCfxAdaOvfB9gq-GXKSuGCAaC_N_5eZZehPOfIbe8D"
     },
     {
         "tipo": "Devoção",
         "nome": "Sagrado Coração de Jesus",
         "descricao": "Contemplar e reparar o infinito amor de Cristo pela humanidade, simbolizado por seu Coração transpassado.",
         "imagem": "../img/comunidades/sagradoCoracao.jpg",
-        "link": "#"
+        "link": "https://bibliotecacatolica.com.br/blog/espiritualidade/sagrado-coracao-de-jesus/?srsltid=AfmBOoq5I0BtE306LpsCT9uPhvZgr_AmAWku4Cp67fZVKgWY5ocVjit3"
     },
     {
         "tipo": "Devoção",
         "nome": "Imaculado Coração de Maria",
         "descricao": "Honrar o coração puro e obediente de Maria, buscando viver suas virtudes e unir-se mais profundamente a Cristo.",
         "imagem": "../img/comunidades/imaculadoCoracao.jpg",
-        "link": "#"
+        "link": "https://bibliotecacatolica.com.br/blog/formacao/imaculado-coracao-de-maria/?srsltid=AfmBOooaw9L1kjpZvJDnfAj6AiG9yUI7moSKwQlCld0TTKSQvY_X-EK1"
     },
     {
         "tipo": "Devoção",
         "nome": "Agonia de Cristo",
         "descricao": "Meditar os sofrimentos de Jesus, especialmente sua Agonia no Horto, reparando os pecados e consolando seu Coração na Eucaristia.",
         "imagem": "../img/comunidades/agoniaDeCristo.jpg",
-        "link": "#"
+        "link": "https://opusdei.org/pt-br/article/getsemani-oracao-e-agonia-de-jesus/"
     },
     {
         "tipo": "Devoção",
         "nome": "Sagrada Face",
         "descricao": "Contemplar a Face de Cristo sofredor e glorioso, oferecendo atos de reparação pelos pecados e ultrajes cometidos contra Deus.",
         "imagem": "../img/comunidades/sagradaFace.jpg",
-        "link": "#"
+        "link": "https://padrepauloricardo.org/episodios/a-devocao-a-sagrada-face-de-cristo-mmxx"
     }
 ]
